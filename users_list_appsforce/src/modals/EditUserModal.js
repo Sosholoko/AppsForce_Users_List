@@ -34,11 +34,11 @@ export default function EditUserModal(props) {
 
   const handleEdit = (user) => {
     setSelectedUser(user);
-    setModalOpen(false);
+    props.closeModal();
   };
 
   const handleCloseModal = () => {
-    setModalOpen(false);
+    props.closeModal();
     setSelectedUser(null);
   };
 

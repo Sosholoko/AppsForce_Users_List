@@ -64,7 +64,7 @@ export default function UsersTable() {
   return (
     <>
       <TableContainer>
-        <EditUserModal showModal={modalOpen} selectedUser={selectedUser} />
+        <EditUserModal showModal={modalOpen} selectedUser={selectedUser} closeModal={() => setModalOpen(false)} />
         <NewUserModal onAddUser={handleAddUser} showModal={newUserModalOpen} closeConfirm={() => setNewUserModalOpen(false)} />
         <ConfirmModal
           showConfirm={confirmOpen}
